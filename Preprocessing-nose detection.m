@@ -1,4 +1,5 @@
-% Besed on "3D-face-nose-tip-recognition"
+% Besed on Article "Automatic 3D Face Detection, Normalization and Recognition"
+% Journal="https://ieeexplore.ieee.org/abstract/document/4155796"
 % URL="https://github.com/RainMen1277/3D-face-nose-tip-recognition"
 % Modified by Lei Jiang
 
@@ -227,7 +228,7 @@ end
 xx = face(:,1);
 yy = face(:,2);
 zz = face(:,3);
-set(figure,'name','人脸');
+set(figure,'name','face');
 plot3(xx,yy,zz,'.');
 %[face_row,face_list] = size(face);
 output_file = 'C:\myfiles\xyz\test1\test2\face_1_1_1.xyz';
