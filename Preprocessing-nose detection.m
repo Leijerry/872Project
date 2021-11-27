@@ -1,3 +1,7 @@
+% Besed on "3D-face-nose-tip-recognition"
+% URL="https://github.com/RainMen1277/3D-face-nose-tip-recognition"
+% Modified by Lei Jiang
+
 clc;
 input_path = 'D:\facedataset1\pending\';  
 output_path = 'D:\facedataset2\result\';  
