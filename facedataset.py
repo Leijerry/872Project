@@ -54,7 +54,10 @@ class FaceDataLoader(Dataset):
         self.use_normals = args.use_normals
         self.num_category = args.num_category
         self.catfile = os.path.join(self.root, 'facedataset.txt')
-
+        if self.num_category == 10:
+            self.catfile = os.path.join(self.root, 'facedataset1_names.txt')
+        else:
+            self.catfile = os.path.join(self.root, 'facedataset2_names.txt')
         self.cat = [line.rstrip() for line in open(self.catfile)]
         self.classes = dict(zip(self.cat, range(len(self.cat))))
 
